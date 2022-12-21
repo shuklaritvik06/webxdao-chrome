@@ -1,0 +1,19 @@
+tasks:
+  - name: Install npm dependencies
+    init: |
+      npm ci
+    command: |
+      npm run dev
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
+    pullRequestsFromForks: true
+    addCheck: true
+    addComment: false
+    addBadge: true
+
+vscode:
+  extensions:
+    - bradlc.vscode-tailwindcss

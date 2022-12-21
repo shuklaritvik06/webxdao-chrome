@@ -1,0 +1,61 @@
+name: Bug Report
+description: Create a report to help us improve
+title: "[BUG]"
+labels: [bug]
+assignees: shuklaritvik06
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+      placeholder: Ex. I found a bug when [...]
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: Ex. Go to '...' Click on '....' Scroll down to '....' See error
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: Ex. I expected to see [...]
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+      placeholder: Ex. ![image](https://user-images.githubusercontent.com/...)
+    validations:
+      required: false
+  - type: dropdown
+    attributes:
+      label: Device
+      description: Please select the device on which you found the bug
+      options:
+        - Mobile
+        - Desktop
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Desktop
+      description: Please complete the following information
+      placeholder: Browser [e.g. chrome, safari] - Version [e.g. 22]
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: I agree to the code of conduct of the project
+      description: Please check the box if you agree
+      options:
+        - label: I agree to the code of conduct of the project
+          required: true

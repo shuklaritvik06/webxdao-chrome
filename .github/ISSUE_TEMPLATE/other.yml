@@ -1,0 +1,24 @@
+name: Other
+description: Any other problem or suggestion
+title: "[Other]"
+labels: [other]
+assignees: shuklaritvik06
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this issue!
+  - type: textarea
+    attributes:
+      label: Describe the suggestion
+      description: A clear and concise description
+      placeholder: Ex. I wanna suggest [...]
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: I agree to the code of conduct of the project
+      description: Please check the box if you agree
+      options:
+        - label: I agree to the code of conduct of the project
+          required: true
