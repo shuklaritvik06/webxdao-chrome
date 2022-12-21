@@ -1,24 +1,37 @@
 name: Other
-description: Any other problem or suggestion
-title: "[Other]"
-labels: [other]
-assignees: shuklaritvik06
+description: Use this for any other issues. PLEASE do not create blank issues
+title: "[OTHER]"
+labels: ["awaiting triage"]
 body:
   - type: markdown
     attributes:
-      value: |
-        Thanks for taking the time to fill out this issue!
+      value: "# Other issue"
   - type: textarea
+    id: issuedescription
     attributes:
-      label: Describe the suggestion
-      description: A clear and concise description
-      placeholder: Ex. I wanna suggest [...]
+      label: What would you like to share?
+      description: Provide a clear and concise explanation of your issue.
     validations:
       required: true
-  - type: checkboxes
+  - type: textarea
+    id: extrainfo
     attributes:
-      label: I agree to the code of conduct of the project
-      description: Please check the box if you agree
+      label: Additional information
+      description: Is there anything else we should know about this issue?
+    validations:
+      required: false
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Would you like to work on this issue?
       options:
-        - label: I agree to the code of conduct of the project
+        - label: Yes, I want to work on this issue!
+          required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/WebXDAO/.github/blob/main/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
           required: true

@@ -1,1 +1,1 @@
-Work in PROGRESS!
+# WebXDAO Chrome Extension

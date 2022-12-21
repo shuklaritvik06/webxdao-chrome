@@ -1,31 +1,46 @@
-name: Feature Reuqest
-description: Suggest an idea for this project
-title: "[Feature]"
+name: Feature request
+description: Suggest features, propose improvements, discuss new ideas.
+title: "[FEATURE]"
 labels: [enhancement]
-assignees: shuklaritvik06
 body:
   - type: markdown
     attributes:
-      value: |
-        Thanks for taking the time to fill out this feature request!
+      value: Provide a general summary of the issue in the Title above
   - type: textarea
+    id: description
     attributes:
-      label: Is your feature request related to a problem? Please describe.
-      description: A clear and concise description of what the feature is.
-      placeholder: Ex. It would be great if we could do [...]
+      label: Detailed description
+      description: Provide a detailed description of the change or addition you are proposing
     validations:
       required: true
   - type: textarea
+    id: context
     attributes:
-      label: Describe the solution you'd like
-      description: A clear and concise description of what you want to happen.
-      placeholder: Ex. I would like to have an option to do [...]
+      label: Context
+      description: |
+        Why is this change important to you? How would you use it?
+        How can it benefit other users?
     validations:
       required: true
+  - type: textarea
+    id: possibleimpl
+    attributes:
+      label: Possible implementation
+      description: Not obligatory, but suggest an idea for implementing addition or change
+    validations:
+      required: false
+  - type: textarea
+    id: extrainformation
+    attributes:
+      label: Additional information
+      description: Is there anything else we should know about this feature?
+    validations:
+      required: false
   - type: checkboxes
+    id: terms
     attributes:
-      label: Wanna Work on this?
-      description: Please check the box if you want to work on this feature.
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/WebXDAO/.github/blob/main/CODE_OF_CONDUCT.md)
       options:
-        - label: I would like to work on this feature!
-          required: false
+        - label: I agree to follow this project's Code of Conduct
+          required: true
