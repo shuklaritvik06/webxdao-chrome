@@ -3,7 +3,7 @@
 <h1 align="center">WebXDAO Chrome Extension</h1>
 <p>
 <p align="center">
-<img src="https://img.shields.io/github/license/WebXDAO/webxdao-chrome?style=social" /></a>
+<img src="https://img.shields.io/github/license/WebXDAO/webxdao-chrome?style=social" />
 <img src="https://img.shields.io/github/stars/WebXDAO/webxdao-chrome?style=social" />
 </p>
 
